@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a53536.finishproject.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp">
+                <TextView
+                    android:id="@+id/username_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:text="当前就诊人："/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray"  />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:text="核酸检测预约调查表" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20sp"
+                    android:layout_marginTop="10dp"
+                    android:text="*1.近3天本人是否有发热(体温≥37.3°C) ?"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.75"
+                    android:orientation="vertical"
+                    android:background="@drawable/underline">
+                    <RadioButton
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="是" />
+                    <RadioButton
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="否" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:weightSum="1"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="65sp"
+                    android:layout_marginTop="10dp"
+                    android:text="*2.近期是否有咳嗽、鼻塞、流涕、咽痛、头痛、乏力、肌肉酸痛、恶心呕吐、腹泻、结膜充血等不适症状?"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2.60" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.20"
+                    android:orientation="vertical"
+                    android:background="@drawable/underline">
+                    <RadioButton
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="是" />
+                    <RadioButton
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="否" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:weightSum="1"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="65sp"
+                    android:layout_marginTop="10dp"
+                    android:text="*3.近14天内是否有港澳、境外地区的旅行史或居住史，或与上述地区人员有近距离密切接触史。"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2.60" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.20"
+                    android:orientation="vertical"
+                    android:background="@drawable/underline">
+                    <RadioButton
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="是" />
+                    <RadioButton
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="否" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:weightSum="1"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="65sp"
+                    android:layout_marginTop="10dp"
+                    android:text="*4.本人是否曾经核酸检测阳性,或近14天内是否与新型冠状病毒感染者(核酸检测阳性者)有接触史。"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2.60" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.20"
+                    android:orientation="vertical"
+                    android:background="@drawable/underline">
+                    <RadioButton
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="是" />
+                    <RadioButton
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="否" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:weightSum="1"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="65sp"
+                    android:layout_marginTop="10dp"
+                    android:text="*5.周围有聚集性发病(例如: 家庭成员中或村屯、工地、单位、科室、小区单元中2人以上接连出现发热)。"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="2.60" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.20"
+                    android:orientation="vertical"
+                    android:background="@drawable/underline">
+                    <RadioButton
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="是" />
+                    <RadioButton
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="否" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="姓        名："/>
+                <EditText
+                    android:id="@+id/name_et"
+                    android:layout_width="262dp"
+                    android:hint="输入姓名"
+                    android:layout_height="wrap_content"
+                    android:onClick="onclick"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="预约时间："/>
+                <EditText
+                    android:id="@+id/time_et"
+                    android:layout_width="262dp"
+                    android:hint="点击选择时间"
+                    android:layout_height="wrap_content"
+                    android:onClick="onclick"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="预约地点："/>
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="242dp"
+                    android:layout_height="30dp">
+                </Spinner>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:weightSum="1"
+                android:layout_marginTop="15dp"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/submit_btn"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:text="提交"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/button_shape"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
